@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recherche de Films</title>
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<div id="searchForm">
+  <input type="text" id="titleInput" placeholder="Titre du film">
+  <input type="number" id="yearInput" placeholder="Année">
+  <select id="typeSelect">
+    <option value="">Tous</option>
+    <option value="movie">Film</option>
+    <option value="series">Série</option>
+    <option value="episode">Épisode</option>
+  </select>
+  <button id="searchButton">Rechercher</button>
+</div>
+
+<div id="results"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Gestion de Films</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="alertMessage" class="alert" style="display: none;"></div>
+
+<h1>Liste de Films</h1>
+
+<button id="showAddFormButton">Ajouter un Film</button>
+
+<div id="addFilmForm" style="display: none;">
+    <input type="text" id="titleInput" placeholder="Titre">
+    <input type="number" id="yearInput" placeholder="Année">
+    <input type="text" id="authorInput" placeholder="Auteur">
+    <button id="saveFilmButton">Enregistrer</button>
+</div>
+
+<button id="sortByTitleButton">Trier par titre</button>
+<button id="sortByYearButton">Trier par année</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>Titre</th>
+            <th>Année</th>
+            <th>Auteur</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="filmsTableBody">
+
+    </tbody>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>
+
